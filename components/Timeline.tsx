@@ -23,13 +23,13 @@ export const Timeline: React.FC<TimelineProps> = ({ onSelectDynasty }) => {
 
       <div className="relative">
         {/* Central Line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-transparent via-bronze/40 to-transparent"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-bronze via-cinnabar/60 to-bronze rounded-full shadow-[0_0_8px_rgba(160,82,45,0.3)] z-0"></div>
 
-        <div className="space-y-12 md:space-y-20">
+        <div className="space-y-12 md:space-y-20 relative z-10">
           {DYNASTIES.map((dynasty, index) => (
             <div 
               key={dynasty.id}
-              className={`relative flex items-center justify-center group transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              className={`relative flex items-center justify-center group transition-all duration-700 ease-out z-10 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
               style={{ transitionDelay: `${index * 100}ms` }}
               onClick={() => onSelectDynasty(dynasty)}
             >
@@ -59,6 +59,11 @@ export const Timeline: React.FC<TimelineProps> = ({ onSelectDynasty }) => {
                 </div>
               </div>
               
+              {/* Connector to next node */}
+              {index < DYNASTIES.length - 1 && (
+                <div className="absolute left-1/2 top-full w-0.5 h-12 md:h-20 bg-gradient-to-b from-cinnabar/60 to-transparent z-0 -translate-x-1/2"></div>
+              )}
+
               {/* Year Marker (Desktop only for cleaner look) */}
               <div className={`hidden md:block absolute top-1/2 transform -translate-y-1/2 text-xs text-bronze/50 font-serif font-bold ${index % 2 === 0 ? 'left-1/2 ml-6' : 'right-1/2 mr-6'}`}>
                  {dynasty.startYear < 0 ? `BC ${Math.abs(dynasty.startYear)}` : `AD ${dynasty.startYear}`}

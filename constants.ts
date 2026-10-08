@@ -1,7 +1,12 @@
 import { Dynasty } from './types';
 
 export const DYNASTIES: Dynasty[] = [
-  {
+{ id: 'xia', name: '夏', period: '约前2146-1675年', startYear: -2146, endYear: -1675, capital: '安邑', summary: '中国第一个王朝，禹建立，二世而亡，开启家天下。', emperors: [{ id: 'xia-1', templeName: '-', name: '禹', reignStart: -2146, reignEnd: -1725, description: '治水有功，受禅让建立夏朝。' }] },
+{ id: 'shang', name: '商', period: '约前1675-1029年', startYear: -1675, endYear: -1029, capital: '亳', summary: '商汤灭夏建商，以青铜文明著称，甲骨文出土，神权与王权结合。', emperors: [{ id: 'shang-1', templeName: '-', name: '汤', reignStart: -1675, reignEnd: -1587, description: '商朝开国君主，灭桀建商。' }] },
+{ id: 'xizhou', name: '西周', period: '约前1029-771年', startYear: -1029, endYear: -771, capital: '镐京', summary: '周武王灭商，封建诸侯，礼乐文明奠基，西周灭亡后进入春秋。', emperors: [{ id: 'xizhou-1', templeName: '武王', name: '姬昌', reignStart: -1029, reignEnd: -996, description: '文王周昌之子，灭商立周。' }] },
+{ id: 'dongzhou-cq', name: '东周（春秋）', period: '前770-476年', startYear: -770, endYear: -476, capital: '洛邑', summary: '周平王东迁洛邑，王室衰微，诸侯争霸，百家争鸣。', emperors: [{ id: 'dongzhou-cq-1', templeName: '平王', name: '姬宜臼', reignStart: -770, reignEnd: -720, description: '东迁洛邑，春秋之始。' }] },
+{ id: 'dongzhou-zg', name: '东周（战国）', period: '前475-221年', startYear: -475, endYear: -221, capital: '-', summary: '三家分晋，七雄并立，变法图强，最终由秦统一。', emperors: [] },
+{
     id: 'qin',
     name: '秦',
     period: '公元前221年 - 公元前207年',
@@ -14,7 +19,8 @@ export const DYNASTIES: Dynasty[] = [
       { id: 'qin-2', templeName: '二世皇帝', name: '胡亥', reignStart: -210, reignEnd: -207, eraName: '-', description: '昏庸暴虐，秦亡于其手。' }
     ]
   },
-  {
+{ id: 'xihan', name: '西汉', period: '前206-公元8年', startYear: -206, endYear: 8, capital: '长安', summary: '刘邦灭秦，文景之治，武帝盛世，王莽篡汉。', emperors: [{ id: 'xihan-1', templeName: '太祖', name: '刘邦', reignStart: -206, reignEnd: -195, eraName: '-', description: '布衣天子，开创汉业。' }] },
+{
     id: 'han',
     name: '汉',
     period: '公元前202年 - 公元220年',
@@ -31,7 +37,45 @@ export const DYNASTIES: Dynasty[] = [
       { id: 'han-6', templeName: '显宗孝明皇帝', name: '刘庄', reignStart: 57, reignEnd: 75, eraName: '永平', description: '明章之治，佛教东传。' }
     ]
   },
-  {
+{ id: 'xin', name: '新朝', period: '9-23年', startYear: 9, endYear: 23, capital: '长安', summary: '王莽篡汉建新，托古改制，最终绿林赤眉起义覆灭。', emperors: [{ id: 'xin-1', templeName: '-', name: '王莽', reignStart: 9, reignEnd: 23, eraName: '-', description: '托古改制，终被推翻。' }] },
+{ id: 'xuanhan', name: '玄汉', period: '23年-25年', startYear: 23, endYear: 25, capital: '宛城/洛阳/长安', summary: '更始帝刘玄政权，短暂存在后被光武帝取代。', emperors: [{ id: 'xuanhan-1', templeName: '更始帝', name: '刘玄', reignStart: 23, reignEnd: 25, description: '短暂政权，后为光武所灭。' }] },
+{ id: 'donghan', name: '东汉', period: '25-220年', startYear: 25, endYear: 220, capital: '洛阳', summary: '光武中兴，明章之治，外戚宦官交替，黄巾起义后分崩。', emperors: [{ id: 'donghan-1', templeName: '光武帝', name: '刘秀', reignStart: 25, reignEnd: 57, eraName: '建武', description: '中兴汉室。' }] },
+{ id: 'caowei', name: '曹魏', period: '220-265年', startYear: 220, endYear: 265, capital: '洛阳', summary: '曹丕代汉称帝，司马氏篡权，终被西晋取代。', emperors: [{ id: 'caowei-1', templeName: '文帝', name: '曹丕', reignStart: 220, reignEnd: 226, eraName: '黄初', description: '曹操长子，代汉建魏。' }] },
+{ id: 'shuhan', name: '蜀汉', period: '221-263年', startYear: 221, endYear: 263, capital: '成都', summary: '刘备称帝，诸葛亮辅政，最终为魏所灭。', emperors: [{ id: 'shuhan-1', templeName: '昭烈帝', name: '刘备', reignStart: 221, reignEnd: 223, eraName: '章武', description: '仁义之主，汉室后裔。' }] },
+{ id: 'sunwu', name: '孙吴', period: '222-280年', startYear: 222, endYear: 280, capital: '建业', summary: '孙权称帝，与魏蜀鼎立，后为西晋所灭。', emperors: [{ id: 'sunwu-1', templeName: '大帝', name: '孙权', reignStart: 222, reignEnd: 252, eraName: '黄武', description: '江东霸主，鼎足三分。' }] },
+{ id: 'xijin', name: '西晋', period: '265-316年', startYear: 265, endYear: 316, capital: '洛阳', summary: '司马炎代魏，短暂统一，八王之乱后五胡乱华。', emperors: [{ id: 'xijin-1', templeName: '武帝', name: '司马炎', reignStart: 265, reignEnd: 290, eraName: '泰始', description: '统一三国，八王之乱起于其后。' }] },
+{ id: 'shiliuguo', name: '十六国', period: '304-439年', startYear: 304, endYear: 439, capital: '-', summary: '五胡乱华时期多个政权并存，最终由北魏统一北方。', emperors: [{ id: 'shiliuguo-1', templeName: '-', name: '多个政权', reignStart: 304, reignEnd: 439, description: '乱世群雄。' }] },
+{ id: 'qianzhao', name: '前赵（汉赵）', period: '304-329年', startYear: 304, endYear: 329, capital: '平阳/长安', summary: '匈奴刘渊建汉，后改赵，石勒灭之。', emperors: [{ id: 'qianzhao-1', templeName: '高祖', name: '刘渊', reignStart: 304, reignEnd: 310, description: '匈奴首领，建汉称帝。' }] },
+{ id: 'chenghan', name: '成汉', period: '306-347年', startYear: 306, endYear: 347, capital: '成都', summary: '巴氐李雄建国，后为东晋所灭。', emperors: [{ id: 'chenghan-1', templeName: '太宗', name: '李雄', reignStart: 306, reignEnd: 334, description: '成汉开国君主。' }] },
+{ id: 'qianliang', name: '前凉', period: '314-363年', startYear: 314, endYear: 363, capital: '姑臧', summary: '张寔建立，长期偏安凉州，后降前秦。', emperors: [{ id: 'qianliang-1', templeName: '高祖', name: '张寔', reignStart: 314, reignEnd: 320, description: '前凉建立者。' }] },
+{ id: 'dongjin', name: '东晋', period: '317-420年', startYear: 317, endYear: 420, capital: '建康', summary: '司马睿南渡建康，偏安江左，与北方十六国对峙。', emperors: [{ id: 'dongjin-1', templeName: '元帝', name: '司马睿', reignStart: 317, reignEnd: 322, eraName: '建武', description: '东渡江左，东晋之始。' }] },
+{ id: 'houzhao', name: '后赵', period: '319-351年', startYear: 319, endYear: 351, capital: '襄国', summary: '羯族石勒建国，残暴统治，后被冉闵所灭。', emperors: [{ id: 'houzhao-1', templeName: '高祖', name: '石勒', reignStart: 319, reignEnd: 333, description: '羯族首领，建立后赵。' }] },
+{ id: 'qianyan', name: '前燕', period: '337-370年', startYear: 337, endYear: 370, capital: '龙城', summary: '鲜卑慕容皝建国，后被前秦所灭。', emperors: [{ id: 'qianyan-1', templeName: '太祖', name: '慕容皝', reignStart: 337, reignEnd: 348, description: '鲜卑前燕开国。' }] },
+{ id: 'ranwei', name: '冉魏', period: '350-352年', startYear: 350, endYear: 352, capital: '邺城', summary: '汉族冉闵短暂政权，以反胡著称。', emperors: [{ id: 'ranwei-1', templeName: '武悼天王', name: '冉闵', reignStart: 350, reignEnd: 352, description: '杀胡令，短暂政权。' }] },
+{ id: 'qianqin', name: '前秦', period: '351-394年', startYear: 351, endYear: 394, capital: '长安', summary: '氐族苻坚统一北方，淝水之战大败后分裂。', emperors: [{ id: 'qianqin-1', templeName: '世宗', name: '苻健', reignStart: 351, reignEnd: 355, description: '前秦奠基者。' }] },
+{ id: 'houqin', name: '后秦', period: '384-417年', startYear: 384, endYear: 417, capital: '长安', summary: '羌族姚苌建国，最终被东晋刘裕所灭。', emperors: [{ id: 'houqin-1', templeName: '太祖', name: '姚苌', reignStart: 384, reignEnd: 394, description: '后秦开国君主。' }] },
+{ id: 'houyan', name: '后燕', period: '384-407年', startYear: 384, endYear: 407, capital: '中山', summary: '鲜卑慕容垂建立，最终被北燕取代。', emperors: [{ id: 'houyan-1', templeName: '世祖', name: '慕容垂', reignStart: 384, reignEnd: 396, description: '后燕建立者。' }] },
+{ id: 'xiyan', name: '西燕', period: '384-394年', startYear: 384, endYear: 394, capital: '长子', summary: '鲜卑慕容泓短暂政权，后被慕容永取代。', emperors: [{ id: 'xiyan-1', templeName: '济北王', name: '慕容泓', reignStart: 384, reignEnd: 384, description: '西燕短暂存在。' }] },
+{ id: 'xiqin', name: '西秦', period: '385-431年', startYear: 385, endYear: 431, capital: '苑川', summary: '鲜卑乞伏国仁建国，偏居陇西。', emperors: [{ id: 'xiqin-1', templeName: '烈祖', name: '乞伏国仁', reignStart: 385, reignEnd: 388, description: '西秦开国。' }] },
+{ id: 'houliang', name: '后凉', period: '386-403年', startYear: 386, endYear: 403, capital: '略阳', summary: '氐族吕光建国，后被后秦所灭。', emperors: [{ id: 'houliang-1', templeName: '太祖', name: '吕光', reignStart: 386, reignEnd: 400, description: '后凉建立者。' }] },
+{ id: 'beiwei', name: '北魏', period: '386-534年', startYear: 386, endYear: 534, capital: '平城/洛阳', summary: '拓跋珪建国，孝文帝汉化改革，最终分裂为东西魏。', emperors: [{ id: 'beiwei-1', templeName: '道武帝', name: '拓跋珪', reignStart: 386, reignEnd: 409, description: '北魏开国。' }] },
+{ id: 'nanliang', name: '南凉', period: '397-414年', startYear: 397, endYear: 414, capital: '西平', summary: '鲜卑拓跋乌孤建国，后被西秦所灭。', emperors: [{ id: 'nanliang-1', templeName: '烈祖', name: '拓跋乌孤', reignStart: 397, reignEnd: 399, description: '南凉开国。' }] },
+{ id: 'beiliang', name: '北凉', period: '397-439年', startYear: 397, endYear: 439, capital: '张掖', summary: '卢水胡沮渠蒙逊建国，最终被北魏所灭。', emperors: [{ id: 'beiliang-1', templeName: '武宣王', name: '沮渠蒙逊', reignStart: 397, reignEnd: 433, description: '北凉开国。' }] },
+{ id: 'nanyan', name: '南燕', period: '398-410年', startYear: 398, endYear: 410, capital: '广固', summary: '鲜卑慕容德建国，短暂存在后被东晋所灭。', emperors: [{ id: 'nanyan-1', templeName: '世宗', name: '慕容德', reignStart: 398, reignEnd: 405, description: '南燕开国君主。' }] },
+{ id: 'xishu', name: '西蜀（后蜀）', period: '405-413年', startYear: 405, endYear: 413, capital: '益州', summary: '谯纵在成都短暂称王，后被东晋所灭。', emperors: [{ id: 'xishu-1', templeName: '成都王', name: '谯纵', reignStart: 405, reignEnd: 413, description: '西蜀短暂政权。' }] },
+{ id: 'xiliang', name: '西凉', period: '407-421年', startYear: 407, endYear: 421, capital: '酒泉', summary: '汉族李暠建国，偏居河西走廊。', emperors: [{ id: 'xiliang-1', templeName: '太祖', name: '李暠', reignStart: 407, reignEnd: 417, description: '西凉开国。' }] },
+{ id: 'huxia', name: '胡夏', period: '407-431年', startYear: 407, endYear: 431, capital: '统万城', summary: '匈奴赫连勃勃建国，国号大夏，后被北魏所灭。', emperors: [{ id: 'huxia-1', templeName: '世祖', name: '赫连勃勃', reignStart: 407, reignEnd: 425, description: '胡夏建立者。' }] },
+{ id: 'beiyan', name: '北燕', period: '407-436年', startYear: 407, endYear: 436, capital: '和龙', summary: '高句丽高云建国，后被北魏所灭。', emperors: [{ id: 'beiyan-1', templeName: '惠懿帝', name: '高云', reignStart: 407, reignEnd: 409, description: '北燕建立者。' }] },
+{ id: 'liusong', name: '刘宋', period: '420-479年', startYear: 420, endYear: 479, capital: '建康', summary: '刘裕代晋建宋，南朝第一个政权。', emperors: [{ id: 'liusong-1', templeName: '武帝', name: '刘裕', reignStart: 420, reignEnd: 422, description: '刘宋开国。' }] },
+{ id: 'xiaoqi', name: '萧齐', period: '479-502年', startYear: 479, endYear: 502, capital: '建康', summary: '萧道成代宋建齐，南朝第二政权。', emperors: [{ id: 'xiaoqi-1', templeName: '高帝', name: '萧道成', reignStart: 479, reignEnd: 482, description: '萧齐开国。' }] },
+{ id: 'nanliang', name: '南梁', period: '502-557年', startYear: 502, endYear: 557, capital: '建康', summary: '萧衍代齐建梁，南朝第三政权，侯景之乱后衰亡。', emperors: [{ id: 'nanliang-1', templeName: '武帝', name: '萧衍', reignStart: 502, reignEnd: 549, description: '南梁开国。' }] },
+{ id: 'dongwei', name: '东魏', period: '534-550年', startYear: 534, endYear: 550, capital: '邺', summary: '高欢掌控下的东魏政权，为北齐所代。', emperors: [{ id: 'dongwei-1', templeName: '孝静帝', name: '元善见', reignStart: 534, reignEnd: 550, description: '东魏末帝，禅让北齐。' }] },
+{ id: 'xiwei', name: '西魏', period: '535-556年', startYear: 535, endYear: 556, capital: '长安', summary: '宇文泰掌控，最终为北周所代。', emperors: [{ id: 'xiwei-1', templeName: '文帝', name: '元宝炬', reignStart: 535, reignEnd: 551, description: '西魏开国君主。' }] },
+{ id: 'beiqi', name: '北齐', period: '550-577年', startYear: 550, endYear: 577, capital: '邺', summary: '高洋代东魏，文化繁荣但政治混乱，终被北周所灭。', emperors: [{ id: 'beiqi-1', templeName: '文宣帝', name: '高洋', reignStart: 550, reignEnd: 559, description: '北齐开国，残暴统治。' }] },
+{ id: 'nanchen', name: '南陈', period: '557-589年', startYear: 557, endYear: 589, capital: '建康', summary: '陈霸先建陈，南朝最后政权，为隋所灭。', emperors: [{ id: 'nanchen-1', templeName: '武帝', name: '陈霸先', reignStart: 557, reignEnd: 559, description: '南陈开国。' }] },
+{ id: 'beizhou', name: '北周', period: '557-581年', startYear: 557, endYear: 581, capital: '长安', summary: '宇文觉代西魏，宇文邕灭北齐，最终禅让隋文帝。', emperors: [{ id: 'beizhou-1', templeName: '孝闵帝', name: '宇文觉', reignStart: 557, reignEnd: 560, description: '北周建立者。' }] },
+{ id: 'sui', name: '隋', period: '581-618年', startYear: 581, endYear: 618, capital: '大兴', summary: '杨坚代北周，重新统一中国，开创科举制，二世而亡。', emperors: [{ id: 'sui-1', templeName: '文帝', name: '杨坚', reignStart: 581, reignEnd: 604, description: '隋朝开国，开皇之治。' }] },
+{
     id: 'tang',
     name: '唐',
     period: '618年 - 907年',
@@ -48,7 +92,25 @@ export const DYNASTIES: Dynasty[] = [
       { id: 'tang-6', templeName: '宪宗', name: '李纯', reignStart: 805, reignEnd: 820, eraName: '元和', description: '元和中兴，削平藩镇。' }
     ]
   },
-  {
+{ id: 'qianshu', name: '前蜀', period: '891-925年', startYear: 891, endYear: 925, capital: '成都', summary: '王建建国，十国之一，后被后唐所灭。', emperors: [{ id: 'qianshu-1', templeName: '高祖', name: '王建', reignStart: 891, reignEnd: 918, description: '前蜀开国。' }] },
+{ id: 'yangwu', name: '杨吴', period: '892-937年', startYear: 892, endYear: 937, capital: '扬州', summary: '杨行密建国，后由徐知诰代立南唐。', emperors: [{ id: 'yangwu-1', templeName: '太祖', name: '杨行密', reignStart: 892, reignEnd: 902, description: '杨吴开国。' }] },
+{ id: 'wuyue', name: '吴越', period: '893-978年', startYear: 893, endYear: 978, capital: '杭州', summary: '钱镠建国，保境安民，最终纳土归宋。', emperors: [{ id: 'wuyue-1', templeName: '武肃王', name: '钱鏐', reignStart: 893, reignEnd: 932, description: '吴越开国。' }] },
+{ id: 'minguo', name: '闽国', period: '893-945年', startYear: 893, endYear: 945, capital: '长乐', summary: '王审知建国，偏居福建，后被南唐所灭。', emperors: [{ id: 'minguo-1', templeName: '太祖', name: '王审知', reignStart: 893, reignEnd: 925, description: '闽国开国。' }] },
+{ id: 'machu', name: '马楚', period: '896-951年', startYear: 896, endYear: 951, capital: '长沙', summary: '马殷建国，十国之一，最终被南唐所灭。', emperors: [{ id: 'machu-1', templeName: '武穆王', name: '马殷', reignStart: 896, reignEnd: 930, description: '马楚开国。' }] },
+{ id: 'nanhan', name: '南汉', period: '905-971年', startYear: 905, endYear: 971, capital: '兴王府', summary: '刘龑建国，偏居岭南，最终被宋所灭。', emperors: [{ id: 'nanhan-1', templeName: '高祖', name: '刘龑', reignStart: 905, reignEnd: 942, description: '南汉开国。' }] },
+{ id: 'wudai-shiguo', name: '五代十国', period: '907-960年（五代）；891-979年（十国）', startYear: 907, endYear: 979, capital: '-', summary: '唐亡后分裂时期，五代在中原更迭，十国在南方并存，最终由宋统一。', emperors: [{ id: 'wudai-shiguo-1', templeName: '-', name: '多个政权', reignStart: 907, reignEnd: 979, description: '乱世并立时代。' }] },
+{ id: 'houlai', name: '后梁', period: '907-923年', startYear: 907, endYear: 923, capital: '汴', summary: '朱温代唐建梁，五代第一个政权。', emperors: [{ id: 'houlai-1', templeName: '太祖', name: '朱晃', reignStart: 907, reignEnd: 912, description: '后梁开国君主。' }] },
+{ id: 'nanping', name: '南平', period: '907-963年', startYear: 907, endYear: 963, capital: '荆州', summary: '高季兴建国，五代十国时期小政权，最终被宋所灭。', emperors: [{ id: 'nanping-1', templeName: '武信王', name: '高季兴', reignStart: 907, reignEnd: 929, description: '南平开国。' }] },
+{ id: 'liao', name: '辽', period: '907-1125年', startYear: 907, endYear: 1125, capital: '皇都', summary: '契丹耶律阿保机建国，与北宋并立，最终被金所灭。', emperors: [{ id: 'liao-1', templeName: '太祖', name: '耶律阿保机', reignStart: 907, reignEnd: 926, description: '契丹建国。' }] },
+{ id: 'houtang', name: '后唐', period: '923-936年', startYear: 923, endYear: 936, capital: '洛阳', summary: '李存勖灭后梁，沙陀族政权。', emperors: [{ id: 'houtang-1', templeName: '庄宗', name: '李存勖', reignStart: 923, reignEnd: 926, description: '后唐开国君主。' }] },
+{ id: 'houshu', name: '后蜀', period: '925-965年', startYear: 925, endYear: 965, capital: '成都', summary: '孟知祥建国，文化繁荣，后被宋所灭。', emperors: [{ id: 'houshu-1', templeName: '高祖', name: '孟知祥', reignStart: 925, reignEnd: 934, description: '后蜀开国。' }] },
+{ id: 'houjin', name: '后晋', period: '936-947年', startYear: 936, endYear: 947, capital: '汴', summary: '石敬瑭建国，割燕云十六州于契丹。', emperors: [{ id: 'houjin-1', templeName: '高祖', name: '石敬瑭', reignStart: 936, reignEnd: 942, description: '后晋开国，割地契丹。' }] },
+{ id: 'nantang', name: '南唐', period: '937-975年', startYear: 937, endYear: 975, capital: '金陵', summary: '李昪建国，文化繁荣，后主李煜亡国。', emperors: [{ id: 'nantang-1', templeName: '烈祖', name: '李昪', reignStart: 937, reignEnd: 943, description: '南唐开国。' }] },
+{ id: 'dali', name: '大理', period: '937-1254年', startYear: 937, endYear: 1254, capital: '太和城', summary: '段思平建国，白族政权，佛教兴盛，最终被元所灭。', emperors: [{ id: 'dali-1', templeName: '太祖', name: '段思平', reignStart: 937, reignEnd: 944, description: '大理开国。' }] },
+{ id: 'houhan', name: '后汉', period: '947-950年', startYear: 947, endYear: 950, capital: '汴', summary: '刘暠建国，短暂存在后被郭威所灭。', emperors: [{ id: 'houhan-1', templeName: '高祖', name: '刘暠', reignStart: 947, reignEnd: 948, description: '后汉开国君主。' }] },
+{ id: 'houzhou', name: '后周', period: '951-960年', startYear: 951, endYear: 960, capital: '汴', summary: '郭威建国，柴荣励精图治，最终禅让赵匡胤。', emperors: [{ id: 'houzhou-1', templeName: '太祖', name: '郭威', reignStart: 951, reignEnd: 954, description: '后周开国君主。' }] },
+{ id: 'beihan', name: '北汉', period: '951-979年', startYear: 951, endYear: 979, capital: '太原', summary: '刘崇建国，依附契丹，最终被宋所灭。', emperors: [{ id: 'beihan-1', templeName: '世祖', name: '刘崇', reignStart: 951, reignEnd: 954, description: '北汉开国。' }] },
+{
     id: 'song',
     name: '宋',
     period: '960年 - 1279年',
@@ -65,7 +127,10 @@ export const DYNASTIES: Dynasty[] = [
       { id: 'song-6', templeName: '高宗', name: '赵构', reignStart: 1127, reignEnd: 1162, eraName: '绍兴', description: '建立南宋，偏安一隅。' }
     ]
   },
-  {
+{ id: 'xixia', name: '西夏', period: '1032-1227年', startYear: 1032, endYear: 1227, capital: '兴庆府', summary: '党项李元昊建国，与宋辽金鼎立，最终被蒙古所灭。', emperors: [{ id: 'xixia-1', templeName: '景帝', name: '李元昊', reignStart: 1032, reignEnd: 1048, description: '西夏开国君主。' }] },
+{ id: 'jin', name: '金', period: '1115-1234年', startYear: 1115, endYear: 1234, capital: '会宁/中都/汴京', summary: '女真完颜阿骨打建国，灭辽灭北宋，最终被蒙古所灭。', emperors: [{ id: 'jin-1', templeName: '太祖', name: '完颜阿骨打', reignStart: 1115, reignEnd: 1123, description: '金朝开国君主。' }] },
+{ id: 'yuan', name: '元', period: '1206-1368年', startYear: 1206, endYear: 1368, capital: '大都', summary: '蒙古忽必烈建国，统一中国，行省制奠定版图，最终被明所灭。', emperors: [{ id: 'yuan-1', templeName: '世祖', name: '忽必烈', reignStart: 1206, reignEnd: 1294, description: '元朝建立者。' }] },
+{
     id: 'ming',
     name: '明',
     period: '1368年 - 1644年',
@@ -83,7 +148,8 @@ export const DYNASTIES: Dynasty[] = [
       { id: 'ming-7', templeName: '思宗', name: '朱由检', reignStart: 1627, reignEnd: 1644, eraName: '崇祯', description: '煤山自缢，刚烈殉国。' }
     ]
   },
-  {
+{ id: 'ming-dynasty', name: '明', period: '1368年 - 1644年', startYear: 1368, endYear: 1644, capital: '南京 / 北京', summary: '朱元璋驱逐蒙元，恢复中华。明朝君主集权空前强化。', emperors: [{ id: 'ming-dynasty-1', templeName: '太祖', name: '朱元璋', reignStart: 1368, reignEnd: 1398, eraName: '洪武', description: '驱逐蒙元。' }] },
+{
     id: 'qing',
     name: '清',
     period: '1644年 - 1912年',
@@ -99,7 +165,11 @@ export const DYNASTIES: Dynasty[] = [
       { id: 'qing-5', templeName: '德宗', name: '载湉', reignStart: 1875, reignEnd: 1908, eraName: '光绪', description: '戊戌变法，瀛台幽禁。' },
       { id: 'qing-6', templeName: '-', name: '溥仪', reignStart: 1908, reignEnd: 1912, eraName: '宣统', description: '末代皇帝，清朝覆亡。' }
     ]
-  }
-];
+  },
+{ id: 'minguo', name: '中华民国', period: '1911-1949', startYear: 1911, endYear: 1949, capital: '南京', summary: '辛亥革命推翻清朝，孙中山建立共和政体，后迁台。', emperors: [{ id: 'minguo-1', templeName: '-', name: '孙中山', reignStart: 1912, reignEnd: 1912, description: '临时大总统。' }] },
+{ id: 'manzhouguo', name: '伪满洲国', period: '1932-1945', startYear: 1932, endYear: 1945, capital: '奉天', summary: '日本扶植的傀儡政权，溥仪为执政，抗战胜利后覆灭。', emperors: [{ id: 'manzhouguo-1', templeName: '-', name: '溥仪', reignStart: 1932, reignEnd: 1945, description: '伪满执政。' }] },
+{ id: 'minguo-taiwan', name: '中华民国（台湾）', period: '1949-今', startYear: 1949, endYear: 2024, capital: '台北', summary: '国民政府迁台后政权延续至今。', emperors: [{ id: 'minguo-taiwan-1', templeName: '-', name: '蒋介石', reignStart: 1949, reignEnd: 1975, description: '迁台后首任总统。' }] },
+{ id: 'prc', name: '中华人民共和国', period: '1949-今', startYear: 1949, endYear: 2024, capital: '北京', summary: '中国共产党建立的社会主义国家。', emperors: [{ id: 'prc-1', templeName: '-', name: '毛泽东', reignStart: 1949, reignEnd: 1976, description: '中华人民共和国开国领袖。' }] }
+  ];
 
 export const INITIAL_AI_MESSAGE = "吾乃太史公之徒。阁下欲知此朝何事？关于帝王生平、典章制度或民间轶事，皆可问询。";
