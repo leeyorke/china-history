@@ -148,7 +148,6 @@ export const DYNASTIES: Dynasty[] = [
       { id: 'ming-7', templeName: '思宗', name: '朱由检', reignStart: 1627, reignEnd: 1644, eraName: '崇祯', description: '煤山自缢，刚烈殉国。' }
     ]
   },
-{ id: 'ming-dynasty', name: '明', period: '1368年 - 1644年', startYear: 1368, endYear: 1644, capital: '南京 / 北京', summary: '朱元璋驱逐蒙元，恢复中华。明朝君主集权空前强化。', emperors: [{ id: 'ming-dynasty-1', templeName: '太祖', name: '朱元璋', reignStart: 1368, reignEnd: 1398, eraName: '洪武', description: '驱逐蒙元。' }] },
 {
     id: 'qing',
     name: '清',
